@@ -10,6 +10,9 @@
     --black: #292929;
     --blackFull: #000000;
     --white: #ffffffe8;
+    --orange: #f78b00;
+    --blue: #00285f;
+    --gray: #ededed;
 }
 
 html,
@@ -164,24 +167,61 @@ nav ul button:hover {
     padding: 16.9px;
     color: var(--white);
     border-radius: 0px 8px 8px 0px;
-    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .search-button:hover {
-    background: var(--white);
+    background: var(--gray);
     color: var(--black);
     cursor: pointer;
     transition: 1s;
 }
 
-.display-grid {
+.card-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
 
+.display-grid {
+    max-width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 20px 40px;
+    padding-top: 20px;
+}
+
+.card img {
+    width: 80%;
 }
 
 .card {
-
+    background: var(--gray);
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
 }
 
 .card-content {
-    
+    width: 80%;
 }
+
+.buttonBlack {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--blackFull);
+    border: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.card p {
+    width: 90%;
+    margin-top: 5px;
+    font-style: italic;
+    color: #00000070;
+} 
