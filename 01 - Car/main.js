@@ -1,4 +1,5 @@
 const filter = document.querySelector('.display-grid')
+const about = document.querySelector('#about')
 
 const constructionGrid =()=>{
     for (let cont =0; cont < 9; cont++) {
@@ -20,5 +21,38 @@ const constructionGrid =()=>{
     }
 }
 
+const constructionAbout = ()=> {
+    const sobre = document.createElement('div')
+    sobre.classList.add('container')
+    sobre.innerHTML = `
+    <div class="title-wrapper-about">
+          <p>Know about us</p>
+          <h3>About</h3>
+        </div>
+        <div class="about-content">
+          <div class="left">
+            <img src="img/about.png" alt="About" />
+          </div>
+          <div class="right">
+            <h3>Join technology and mobility</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae ut inventore magni repellendus ab ad itaque facere. A
+              tenetur quam, nobis tempore illum laborum ipsa fuga, itaque
+              possimus repellat ad perspiciatis, velit reiciendis eos facilis
+              sapiente blanditiis quas officia hic beatae quibusdam! Quod
+              eligendi porro possimus voluptatum ad ipsum sapiente soluta,
+              maiores nobis tenetur adipisci officiis nisi illum quae natus
+              nostrum tempora accusantium blanditiis? Rem nesciunt illum
+              dolorum, perferendis quos consequatur suscipit cumque fugiat alias
+              sint repellat qui adipisci error est distinctio doloribus labore
+              sunt modi eos odio quibusdam dicta. Dignissimos voluptate illum
+              possimus quo. Ducimus repellat doloribus quisquam quidem?
+            </p>
+          </div>
+        </div>
+    `
+    about.appendChild(sobre)
+}
 constructionGrid()
-console.log(filter)
+constructionAbout()
