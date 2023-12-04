@@ -99,7 +99,7 @@ nav ul button:hover {
     height: 450px;
     background: #ffffff9c;
     border-radius: 8px;
-    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.2);
     position: relative;
     /* z-index: 10; */
     padding: 10px;
@@ -149,7 +149,7 @@ nav ul button:hover {
     align-items: center;
     border: none;
     border-radius: 8px;
-    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background-color: var(--gray);
 }
 
 .search-input {
@@ -242,7 +242,7 @@ nav ul button:hover {
 
 .left img {
     margin: 10px;
-    background: var(--black);
+    background: var(--blackFull);
     border-radius: 6px;
 }
 
@@ -257,7 +257,9 @@ nav ul button:hover {
 
 .right p {
     margin: 20px;
-    color: var(--blackFull);
+    font-size: 14px;
+    color:#292929a8;
+    letter-spacing: 2px;
 }
 
 .title-wrapper-about p {

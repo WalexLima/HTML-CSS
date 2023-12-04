@@ -1,5 +1,6 @@
 const filter = document.querySelector('.display-grid')
 const about = document.querySelector('#about')
+const features = document.querySelector('.feature-card-block')
 
 const constructionGrid =()=>{
     for (let cont =0; cont < 9; cont++) {
@@ -54,5 +55,23 @@ const constructionAbout = ()=> {
     `
     about.appendChild(sobre)
 }
+
+const contructionFeatures =()=>{
+    const figuras = document.createElement('div')
+    figuras.classList.add('features')
+    figuras.innerHTML = `
+    <div class="feature-card-item">
+        <img src="img/feature-planet.png" alt="Feature" />
+        <div class="feature-text-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    `
+    features.appendChild(figuras)
+
+}
+
+contructionFeatures()
 constructionGrid()
 constructionAbout()
