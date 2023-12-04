@@ -29,7 +29,7 @@ const constructionAbout = ()=> {
           <p>Know about us</p>
           <h3>About</h3>
         </div>
-        <div class="about-content">
+        <div class="about-contener">
           <div class="left">
             <img src="img/about.png" alt="About" />
           </div>
