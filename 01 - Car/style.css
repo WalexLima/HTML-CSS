@@ -271,3 +271,165 @@ nav ul button:hover {
     margin: 20px;
     font-size: 15px;
 }
+
+/* Faetures */
+
+.title-wrapper-features {
+    margin-bottom: 30px;
+}
+
+.title-wrapper-features p {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.title-wrapper-features h3 {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.feature-card-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    gap: 30px;
+}
+
+.feature-card-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid var(--gray);
+}
+
+.feature-card-item img {
+    width: 15%;
+}
+
+.feature-text-content h3 {
+    margin: 20px;
+    font-size: 25px;
+}
+
+.feature-text-content p {
+    margin: 20px;
+    font-size: 14px;
+    color:#292929a8;
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: var(--blackFull);
+    height: 250px;
+}
+
+.conteudo-footer {
+    margin-left: 40px;
+    color: var(--white);
+    padding: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.footer-company {
+    padding-bottom: 20px;
+}
+
+.footer-contact {
+    padding-bottom: 20px;
+}
+
+.footer-company h4 {
+    padding-bottom: 20px;
+}
+
+.social-icons img {
+    width: 15%;
+}
+
+.footer-contact h4 {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    nav ul li {
+      display: none;
+    }
+  
+    .header-block img {
+      width: 70%;
+      position: absolute;
+      right: 16%;
+      top: 30%;
+    }
+  
+    .header-block .text {
+      position: absolute;
+      bottom: 10%;
+      left: 15;
+    }
+  
+    section .filter-card {
+      width: 390px;
+      padding: 0px 10px;
+    }
+  
+    .search-input {
+      max-width: 700px;
+      min-width: 240px;
+    }
+  
+    .search-button {
+      max-width: 150px;
+      min-width: 80px;
+    }
+  
+    .about {
+      margin-top: 100px;
+    }
+  
+    .title-wrapper-about {
+      margin-bottom: 20px;
+    }
+    .about-content {
+      flex-direction: column;
+      height: 100%;
+    }
+    .left {
+      display: none;
+    }
+    .right {
+      width: 90%;
+    }
+  
+    .right p {
+      width: 100%;
+      margin: 0px;
+      text-align: left;
+    }
+  
+    .features {
+      height: 100%;
+    }
+  
+    .feature-card-block {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    footer {
+      height: 100%;
+    }
+  
+    footer .main {
+      height: 100%;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      padding-left: 10%;
+    }
+  }

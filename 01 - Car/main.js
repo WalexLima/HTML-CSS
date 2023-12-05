@@ -57,19 +57,19 @@ const constructionAbout = ()=> {
 }
 
 const contructionFeatures =()=>{
-    const figuras = document.createElement('div')
-    figuras.classList.add('features')
-    figuras.innerHTML = `
-    <div class="feature-card-item">
-        <img src="img/feature-planet.png" alt="Feature" />
-        <div class="feature-text-content">
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-    </div>
-    `
-    features.appendChild(figuras)
 
+    for (let number = 0; number < 6; number++) {
+        const figuras = document.createElement('div')
+        figuras.classList.add('feature-card-item')
+        figuras.innerHTML += `
+            <img src="img/feature-planet.png" alt="Feature" />
+            <div class="feature-text-content">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        `
+        features.appendChild(figuras)
+    }
 }
 
 contructionFeatures()
