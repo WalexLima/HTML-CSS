@@ -206,7 +206,7 @@ nav ul button:hover {
 }
 
 .card-content {
-    width: 80%;
+    width: 90%;
 }
 
 .buttonBlack {
@@ -433,4 +433,6 @@ footer {
       flex-direction: column;
       padding-left: 10%;
     }
+
+
   }
